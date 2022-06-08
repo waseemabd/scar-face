@@ -1,0 +1,83 @@
+{
+  "menu": [
+
+      {
+          "url": "admin/currency",
+          "name": "Currency",
+          "icon": "shopping-cart",
+          "slug": "admin-currency"
+      },
+      {
+          "name": "Images",
+          "icon": "user",
+          "slug": "",
+          "submenu": [
+              {
+                  "url": "admin/images",
+                  "name": "List",
+                  "icon": "circle",
+                  "slug": "admin-images"
+              },
+              {
+                  "url": "admin/add-image",
+                  "name": "Add",
+                  "icon": "circle",
+                  "slug": "admin-create-image"
+              }
+          ]
+      },
+
+      {
+          "name": "Features",
+          "icon": "user",
+          "slug": "",
+          "submenu": [
+              {
+                  "url": "admin/features",
+                  "name": "List",
+                  "icon": "circle",
+                  "slug": "admin-features"
+              },
+              {
+                  "url": "admin/add-feature",
+                  "name": "Add",
+                  "icon": "circle",
+                  "slug": "admin-create-feature"
+              }
+          ]
+      },
+
+      {
+          "name": "Partners",
+          "icon": "user",
+          "slug": "",
+          "submenu": [
+              {
+                  "url": "admin/partners",
+                  "name": "List",
+                  "icon": "circle",
+                  "slug": "admin-partners"
+              },
+              {
+                  "url": "admin/add-partner",
+                  "name": "Add",
+                  "icon": "circle",
+                  "slug": "admin-create-partner"
+              }
+          ]
+      },
+      {
+          "url": "admin/plan",
+          "name": "Plan",
+          "icon": "shopping-cart",
+          "slug": "app-admin-plan"
+      },
+      {
+          "url": "admin/settings",
+          "name": "Settings",
+          "icon": "shopping-cart",
+          "slug": "app-admin-settings"
+      }
+
+  ]
+}
