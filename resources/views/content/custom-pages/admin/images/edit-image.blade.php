@@ -48,6 +48,29 @@
                                     </div>
                                 </div>
 
+                                <div class="col-md-6 col-12">
+                                    <div class="mb-2 ">
+                                        <label class="form-label"
+                                               for="blog-edit-title">{{trans('features/features.title')}}<span
+                                                class="text-danger">*</span></label>
+                                        <input
+                                            type="text"
+                                            name="title"
+                                            id="blog-edit-title"
+                                            class="form-control"
+                                            placeholder="{{trans('features/features.title_plc')}}"
+                                            value="{{$image->title}}"
+                                            required
+                                        />
+                                        <div class="valid-feedback">{{trans('general.looks_good')}}</div>
+                                        <div
+                                            class="invalid-feedback">{{trans('general.Pls'). trans('features/features.title_plc')}}
+                                            .
+                                        </div>
+                                    </div>
+
+                                </div>
+
                                 <div class="col-12 mb-2">
                                     <div class="border rounded p-2">
                                         <h4 class="mb-1">{{trans('images/images.image')}} <span

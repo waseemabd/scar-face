@@ -42,9 +42,9 @@
             <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
           </ul>
           <ul class="nav navbar-nav bookmark-icons">
-            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{route('admin-create-image')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{trans('images/images.add_new_image')}}"><i class="ficon" data-feather="mail"></i></a></li>
-            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{route('admin-create-feature')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{trans('features/features.add_new_feature')}}"><i class="ficon" data-feather="message-square"></i></a></li>
-            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{route('admin-create-partner')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{trans('partners/partners.add_new_partner')}}"><i class="ficon" data-feather="calendar"></i></a></li>
+            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{route('admin-create-image')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{trans('images/images.add_new_image')}}"><i class="ficon" data-feather="image"></i></a></li>
+            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{route('admin-create-feature')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{trans('features/features.add_new_feature')}}"><i class="ficon" data-feather="feather"></i></a></li>
+            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{route('admin-create-partner')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{trans('partners/partners.add_new_partner')}}"><i class="ficon" data-feather="book-open"></i></a></li>
           </ul>
 {{--          <ul class="nav navbar-nav">--}}
 {{--            <li class="nav-item d-none d-lg-block">--}}
@@ -309,21 +309,21 @@
 {{--              <i class="me-50" data-feather="user"></i> Profile--}}
 {{--            </a>--}}
             <a class="dropdown-item" href="{{route('admin-currency')}}">
-              <i class="me-50" data-feather="mail"></i> {{trans('locale.Currency')}}
+              <i class="me-50" data-feather="dollar-sign"></i> {{trans('locale.Currency')}}
             </a>
               <a class="dropdown-item" href="{{route('admin-images')}}">
-                  <i class="me-50" data-feather="help-circle"></i> {{trans('locale.Images')}}
+                  <i class="me-50" data-feather="image"></i> {{trans('locale.Images')}}
               </a>
             <a class="dropdown-item" href="{{route('admin-features')}}">
-              <i class="me-50" data-feather="check-square"></i> {{trans('locale.Features')}}
+              <i class="me-50" data-feather="feather"></i> {{trans('locale.Features')}}
             </a>
 
             <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{route('admin-partners')}}">
-                  <i class="me-50" data-feather="credit-card"></i> {{trans('locale.Partners')}}
+                  <i class="me-50" data-feather="users"></i> {{trans('locale.Partners')}}
               </a>
               <a class="dropdown-item" href="{{route('admin-plan')}}">
-                  <i class="me-50" data-feather="message-square"></i> {{trans('locale.Plan')}}
+                  <i class="me-50" data-feather="book-open"></i> {{trans('locale.Plan')}}
               </a>
             <a class="dropdown-item" href="{{route('admin-settings')}}">
               <i class="me-50" data-feather="settings"></i> {{trans('locale.Settings')}}

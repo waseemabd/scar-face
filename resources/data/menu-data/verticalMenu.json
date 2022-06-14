@@ -4,12 +4,12 @@
       {
           "url": "admin/currency",
           "name": "Currency",
-          "icon": "shopping-cart",
+          "icon": "dollar-sign",
           "slug": "admin-currency"
       },
       {
           "name": "Images",
-          "icon": "user",
+          "icon": "image",
           "slug": "",
           "submenu": [
               {
@@ -29,7 +29,7 @@
 
       {
           "name": "Features",
-          "icon": "user",
+          "icon": "feather",
           "slug": "",
           "submenu": [
               {
@@ -49,7 +49,7 @@
 
       {
           "name": "Partners",
-          "icon": "user",
+          "icon": "users",
           "slug": "",
           "submenu": [
               {
@@ -69,13 +69,13 @@
       {
           "url": "admin/plan",
           "name": "Plan",
-          "icon": "shopping-cart",
+          "icon": "book-open",
           "slug": "app-admin-plan"
       },
       {
           "url": "admin/settings",
           "name": "Settings",
-          "icon": "shopping-cart",
+          "icon": "settings",
           "slug": "app-admin-settings"
       }
 

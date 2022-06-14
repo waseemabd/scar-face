@@ -23,6 +23,7 @@ class ImageSeeder extends Seeder
 
                 'id' => 1,
                 'type' =>'slider',
+                'title' => 'lorem 1',
                 'image' =>'',
                 'created_at' =>now(),
                 'updated_at' =>now(),
@@ -32,6 +33,7 @@ class ImageSeeder extends Seeder
 
                 'id' => 2,
                 'type' =>'slider',
+                'title' => 'lorem 2',
                 'image' =>'',
                 'created_at' =>now(),
                 'updated_at' =>now(),
@@ -40,6 +42,7 @@ class ImageSeeder extends Seeder
 
                 'id' => 3,
                 'type' =>'slider',
+                'title' => 'lorem 3',
                 'image' =>'',
                 'created_at' =>now(),
                 'updated_at' =>now(),
@@ -48,6 +51,7 @@ class ImageSeeder extends Seeder
 
                 'id' => 4,
                 'type' =>'slider',
+                'title' => 'lorem 4',
                 'image' =>'',
                 'created_at' =>now(),
                 'updated_at' =>now(),

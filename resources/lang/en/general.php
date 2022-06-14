@@ -78,7 +78,7 @@ return [
     'Accept'=>'Accept',
     'accept_warning'=>'Do you want to accept this Driver?',
     'reject_warning'=>'Do you want to reject this Driver?',
-    'reason'=>'reason',
+    'read_more'=>'Read More',
 
     'scarFace'=>'ScarFace',
 

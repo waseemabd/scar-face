@@ -16,7 +16,7 @@ return [
     "logo_res" => "Required image resolution 800x400, image size 10mb",
     "plc_upload_logo" => "Please Upload Logo",
     "link_plc" => "Enter Link",
-    "Currency" => "Currency",
+    "our_partners" => "Our Partners",
     "Currency" => "Currency",
     "Currency" => "Currency",
 

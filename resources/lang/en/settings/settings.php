@@ -37,7 +37,7 @@ return [
     'paper_en_plc' => 'Enter English White Paper',
     'paper_ar' => 'Arabic White Paper',
     'paper_ar_plc' => 'Enter Arabic White Paper',
-    'tax' => 'Tax',
+    'white_papers' => 'White Papers',
     'tax' => 'Tax',
     'tax' => 'Tax',
     'tax' => 'Tax',

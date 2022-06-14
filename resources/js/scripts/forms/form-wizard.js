@@ -141,7 +141,7 @@ $(function () {
       .on('click', function () {
         var isValid = $(this).parent().siblings('form').valid();
         if (isValid) {
-          alert('Submitted..!!');
+            $(this).parent().siblings('form').submit();
         }
       });
   }

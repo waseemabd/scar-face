@@ -12,9 +12,9 @@
                     <img class="card-img-top" src="{{URL::asset($image->image)}}" alt="Card image cap" />
                     <div class="card-body">
                         <h4 class="card-title">{{trans('images/images.'.$image->type)}}</h4>
-{{--                        <p class="card-text">--}}
-{{--                            Some quick example text to build on the card title and make up the bulk of the card's content.--}}
-{{--                        </p>--}}
+                        <p class="card-text">
+                            {{ $image->title }}
+                        </p>
                         <div class="d-flex">
                             <a href="{{route('admin-edit-image', $image->id)}}"
                                class="dropdown-item delete-record card-link" style="color: #7367f0">

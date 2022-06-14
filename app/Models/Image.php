@@ -13,6 +13,7 @@ class Image extends Model
 
     protected $fillable = [
         'type',
+        'title',
         'image',
     ];
 

@@ -39,4 +39,13 @@ return [
     'Feature_Deleted_Successfully' => 'Feature Deleted Successfully',
     'Partner_Deleted_Successfully' => 'Partner Deleted Successfully',
     'Image_Deleted_Successfully' => 'Image Deleted Successfully',
+
+
+
+    'basic_Updated_Successfully' => 'Basic Information Updated Successfully',
+    'stage1_Updated_Successfully' => 'First Stage Information Updated Successfully',
+    'stage2_Updated_Successfully' => 'Second Stage Information Updated Successfully',
+    'stage3_Updated_Successfully' => 'third Stage Information Updated Successfully',
+
+
 ];

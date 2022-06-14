@@ -50,7 +50,10 @@ Route::group(['prefix' => 'admin'], function () {
 
 //        Route::get('/', [\App\Http\Controllers\Admin\CurrencyController::class, 'index'])->name('admin-admin-currency');
         Route::get('/currency', [\App\Http\Controllers\Admin\CurrencyController::class, 'index'])->name('admin-currency');
-        Route::post('/currency', [\App\Http\Controllers\Admin\CurrencyController::class, 'update'])->name('admin-update-currency');
+        Route::post('/update-currency-stage0', [\App\Http\Controllers\Admin\CurrencyController::class, 'updateStage0'])->name('admin-update-currency-stage0');
+        Route::post('/update-currency-stage1', [\App\Http\Controllers\Admin\CurrencyController::class, 'updateStage1'])->name('admin-update-currency-stage1');
+        Route::post('/update-currency-stage2', [\App\Http\Controllers\Admin\CurrencyController::class, 'updateStage2'])->name('admin-update-currency-stage2');
+        Route::post('/update-currency-stage3', [\App\Http\Controllers\Admin\CurrencyController::class, 'updateStage3'])->name('admin-update-currency-stage3');
 
         Route::get('/features', [\App\Http\Controllers\Admin\FeatureController::class, 'index'])->name('admin-features');
         Route::get('/allFeatures', [\App\Http\Controllers\Admin\FeatureController::class, 'getAllFeatures'])->name('admin-ajax-features');

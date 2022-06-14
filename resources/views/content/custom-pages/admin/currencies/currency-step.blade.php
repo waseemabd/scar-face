@@ -78,11 +78,7 @@
                         <h5 class="mb-0">{{trans('currencies/currencies.basic_info')}}</h5>
 {{--                        <small class="text-muted">Enter Your Account Details.</small>--}}
                     </div>
-                    <form method="POST" class="mt-2 needs-validation blog_form" id="blog_form"
-                          action="{{route('admin-update-currency')}}"
-                          novalidate enctype="multipart/form-data">
-                        @csrf
-
+                    <form id="stage_0_form">
                         <div class="row">
                             <div class="col-md-6 col-12">
                                 <div class="mb-2 ">
@@ -134,6 +130,26 @@
 
                             </div>
                         </div>
+
+                    </form>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-outline-secondary btn-prev" disabled>
+                            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                            <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Previous')}}</span>
+                        </button>
+                        <button class="btn btn-primary btn-next" id="stage_0_btn">
+                            <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Next')}}</span>
+                            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="personal-info" class="content" role="tabpanel" aria-labelledby="personal-info-trigger">
+                    <div class="content-header">
+                        <h5 class="mb-0">{{trans('currencies/currencies.stage_1')}}</h5>
+{{--                        <small>Enter Your Personal Info.</small>--}}
+                    </div>
+                    <form id="stage_1_form">
+
                         <div class="row">
                             <div class="col-md-6 col-12">
                                 <div class="mb-2 ">
@@ -142,12 +158,12 @@
                                             class="text-danger">*</span></label>
                                     <input
                                         type="text"
-                                        name="link"
+                                        name="link_stage_1"
                                         id="blog-edit-title"
                                         class="form-control"
                                         placeholder="www.example.com"
-                                        value="{{$stage_0 ? $stage_0->link : null}}"
-                                        required
+                                        value="{{$stage_1 ? $stage_1->link : null}}"
+
                                     />
                                     <div class="valid-feedback">{{trans('general.looks_good')}}</div>
                                     <div
@@ -159,28 +175,6 @@
                             </div>
 
                         </div>
-                    </form>
-                    <div class="d-flex justify-content-between">
-                        <button class="btn btn-outline-secondary btn-prev" disabled>
-                            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                            <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Previous')}}</span>
-                        </button>
-                        <button class="btn btn-primary btn-next">
-                            <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Next')}}</span>
-                            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                        </button>
-                    </div>
-                </div>
-                <div id="personal-info" class="content" role="tabpanel" aria-labelledby="personal-info-trigger">
-                    <div class="content-header">
-                        <h5 class="mb-0">{{trans('currencies/currencies.stage_1')}}</h5>
-{{--                        <small>Enter Your Personal Info.</small>--}}
-                    </div>
-                    <form method="POST" class="mt-2 needs-validation blog_form" id="blog_form"
-                          action="{{route('admin-update-currency')}}"
-                          novalidate enctype="multipart/form-data">
-                        @csrf
-
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-2">
@@ -239,7 +233,7 @@
                             <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
                             <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Previous')}}</span>
                         </button>
-                        <button class="btn btn-primary btn-next">
+                        <button class="btn btn-primary btn-next" id="stage_1_btn">
                             <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Next')}}</span>
                             <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
                         </button>
@@ -250,11 +244,32 @@
                         <h5 class="mb-0">{{trans('currencies/currencies.stage_2')}}</h5>
 {{--                        <small>Enter Your Address.</small>--}}
                     </div>
-                    <form method="POST" class="mt-2 needs-validation blog_form" id="blog_form"
-                          action="{{route('admin-update-currency')}}"
-                          novalidate enctype="multipart/form-data">
-                        @csrf
+                    <form id="stage_2_form">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="mb-2 ">
+                                    <label class="form-label"
+                                           for="blog-edit-title">{{trans('currencies/currencies.link')}}<span
+                                            class="text-danger">*</span></label>
+                                    <input
+                                        type="text"
+                                        name="link_stage_2"
+                                        id="blog-edit-title"
+                                        class="form-control"
+                                        placeholder="www.example.com"
+                                        value="{{$stage_2 ? $stage_2->link : null}}"
 
+                                    />
+                                    <div class="valid-feedback">{{trans('general.looks_good')}}</div>
+                                    <div
+                                        class="invalid-feedback">{{trans('general.Pls'). trans('currencies/currencies.link_plc')}}
+                                        .
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-2">
@@ -313,7 +328,7 @@
                             <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
                             <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Previous')}}</span>
                         </button>
-                        <button class="btn btn-primary btn-next">
+                        <button class="btn btn-primary btn-next" id="stage_2_btn">
                             <span class="align-middle d-sm-inline-block d-none">{{trans('currencies/currencies.Next')}}</span>
                             <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
                         </button>
@@ -324,10 +339,35 @@
                         <h5 class="mb-0">{{trans('currencies/currencies.stage_3')}}</h5>
 {{--                        <small>Enter Your Social Links.</small>--}}
                     </div>
-                    <form method="POST" class="mt-2 needs-validation blog_form" id="blog_form"
-                          action="{{route('admin-update-currency')}}"
+                    <form method="POST" class="mt-2 needs-validation" id="stage_3_form"
+                          action="{{route('admin-update-currency-stage3')}}"
                           novalidate enctype="multipart/form-data">
                         @csrf
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="mb-2 ">
+                                    <label class="form-label"
+                                           for="blog-edit-title">{{trans('currencies/currencies.link')}}<span
+                                            class="text-danger">*</span></label>
+                                    <input
+                                        type="text"
+                                        name="link_stage_3"
+                                        id="blog-edit-title"
+                                        class="form-control"
+                                        placeholder="www.example.com"
+                                        value="{{$stage_3 ? $stage_3->link : null}}"
+
+                                    />
+                                    <div class="valid-feedback">{{trans('general.looks_good')}}</div>
+                                    <div
+                                        class="invalid-feedback">{{trans('general.Pls'). trans('currencies/currencies.link_plc')}}
+                                        .
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-2">

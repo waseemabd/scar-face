@@ -16,8 +16,8 @@ return [
     "image_res" => "Required image resolution 800x400, image size 10mb",
     "plc_upload_image" => "Please Upload Image",
     "slider" => "Slider",
-    "Currency" => "Currency",
-    "Currency" => "Currency",
+    "title" => "Title",
+    "title_plc" => "Enter Title",
     "Currency" => "Currency",
 
 

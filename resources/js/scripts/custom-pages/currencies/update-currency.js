@@ -234,9 +234,9 @@
     });
 
 
-    $('#blog_form').on('submit', function () {
-        $('#desc_stage_1').val(blogEditorStage1.container.firstChild.innerHTML);
-        $('#desc_stage_2').val(blogEditorStage2.container.firstChild.innerHTML);
+    $('#stage_3_form').on('submit', function () {
+        // $('#desc_stage_1').val(blogEditorStage1.container.firstChild.innerHTML);
+        // $('#desc_stage_2').val(blogEditorStage2.container.firstChild.innerHTML);
         $('#desc_stage_3').val(blogEditorStage3.container.firstChild.innerHTML);
     });
 
@@ -298,7 +298,223 @@
             // blogImageText.innerHTML = blogImageInput.val();
         });
     }
+    $.ajaxSetup({
 
+        headers: {
+
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+
+        }
+
+    });
+    $("#stage_0_btn").on('click', function (e) {
+
+        e.preventDefault();
+
+        // $('#stage_0_form').submit()
+        // ev.preventDefault(); // Prevent browser default submit.
+        var form = document.getElementById('stage_0_form');
+        console.log(form)
+
+        var formData = new FormData(form);
+        $.ajax({
+            type: 'POST',
+
+            url: '/admin/update-currency-stage0',
+
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+
+            success: function (response) {
+                console.log(response.message)
+
+                if (response.status === 200) {
+                    // On load Toast
+                    setTimeout(function () {
+                        toastr['success'](
+                            Lang.get('js_local.basic_Updated_Successfully'),
+                            {
+                                closeButton: true,
+                                tapToDismiss: false,
+                                rtl: isRtl
+                            }
+                        );
+                    }, 500);
+
+                } else {
+                    setTimeout(function () {
+                        toastr['error'](
+                            Lang.get('js_local.Operation_Failed'),
+                            {
+                                closeButton: true,
+                                tapToDismiss: false,
+                                rtl: isRtl
+                            }
+                        );
+                    }, 500);
+                }
+
+
+            },
+            error: function (jqXHR) {
+                alert(jQuery.parseJSON(jqXHR.responseText).message);
+
+            }
+        });
+        // $.ajax({
+        //     url: "page.php",
+        //     type: "POST",
+        //     data: formData,
+        //     success: function (msg) {
+        //         alert(msg)
+        //     },
+        //     cache: false,
+        //     contentType: false,
+        //     processData: false
+        // });
+    });
+
+    $("#stage_1_btn").on('click', function (e) {
+
+        e.preventDefault();
+        $('#desc_stage_1').val(blogEditorStage1.container.firstChild.innerHTML);
+
+        // $('#stage_0_form').submit()
+        // ev.preventDefault(); // Prevent browser default submit.
+        var form = document.getElementById('stage_1_form');
+        console.log(form)
+
+        var formData = new FormData(form);
+        $.ajax({
+            type: 'POST',
+
+            url: '/admin/update-currency-stage1',
+
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+
+            success: function (response) {
+                console.log(response.message)
+
+                if (response.status === 200) {
+                    // On load Toast
+                    setTimeout(function () {
+                        toastr['success'](
+                            Lang.get('js_local.stage1_Updated_Successfully'),
+                            {
+                                closeButton: true,
+                                tapToDismiss: false,
+                                rtl: isRtl
+                            }
+                        );
+                    }, 500);
+
+                } else {
+                    setTimeout(function () {
+                        toastr['error'](
+                            Lang.get('js_local.Operation_Failed'),
+                            {
+                                closeButton: true,
+                                tapToDismiss: false,
+                                rtl: isRtl
+                            }
+                        );
+                    }, 500);
+                }
+
+
+            },
+            error: function (jqXHR) {
+                alert(jQuery.parseJSON(jqXHR.responseText).message);
+
+            }
+        });
+        // $.ajax({
+        //     url: "page.php",
+        //     type: "POST",
+        //     data: formData,
+        //     success: function (msg) {
+        //         alert(msg)
+        //     },
+        //     cache: false,
+        //     contentType: false,
+        //     processData: false
+        // });
+    });
+
+    $("#stage_2_btn").on('click', function (e) {
+
+        e.preventDefault();
+        $('#desc_stage_2').val(blogEditorStage2.container.firstChild.innerHTML);
+
+        // $('#stage_0_form').submit()
+        // ev.preventDefault(); // Prevent browser default submit.
+        var form = document.getElementById('stage_2_form');
+        console.log(form)
+
+        var formData = new FormData(form);
+        $.ajax({
+            type: 'POST',
+
+            url: '/admin/update-currency-stage2',
+
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+
+            success: function (response) {
+                console.log(response.message)
+
+                if (response.status === 200) {
+                    // On load Toast
+                    setTimeout(function () {
+                        toastr['success'](
+                            Lang.get('js_local.stage2_Updated_Successfully'),
+                            {
+                                closeButton: true,
+                                tapToDismiss: false,
+                                rtl: isRtl
+                            }
+                        );
+                    }, 500);
+
+                } else {
+                    setTimeout(function () {
+                        toastr['error'](
+                            Lang.get('js_local.Operation_Failed'),
+                            {
+                                closeButton: true,
+                                tapToDismiss: false,
+                                rtl: isRtl
+                            }
+                        );
+                    }, 500);
+                }
+
+
+            },
+            error: function (jqXHR) {
+                alert(jQuery.parseJSON(jqXHR.responseText).message);
+
+            }
+        });
+        // $.ajax({
+        //     url: "page.php",
+        //     type: "POST",
+        //     data: formData,
+        //     success: function (msg) {
+        //         alert(msg)
+        //     },
+        //     cache: false,
+        //     contentType: false,
+        //     processData: false
+        // });
+    });
 
 })(window, document, jQuery);
 

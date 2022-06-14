@@ -23,10 +23,6 @@ class Currency extends Model
     public  const create_update_rules = [
 
         'stage' => 'required',
-        'name' => 'required',
-        'link' => 'required',
-        'price' => 'required|numeric',
-        'desc' => 'required',
-        'image' => 'required',
+        'price' => 'numeric',
     ];
 }
