@@ -38,7 +38,7 @@ return [
     'paper_ar' => 'Arabic White Paper',
     'paper_ar_plc' => 'Enter Arabic White Paper',
     'white_papers' => 'White Papers',
-    'tax' => 'Tax',
+    'whats_phone_note' => 'Dont\'t use + or () in whatsApp phone',
     'tax' => 'Tax',
     'tax' => 'Tax',
     'tax' => 'Tax',

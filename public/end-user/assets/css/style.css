@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 3px;
   padding-left: 10px;
-  border-left: 4px solid #f67f00;
+  /*border-left: 4px solid #f67f00;*/
 }
 #header .logo a {
   color: #fff;

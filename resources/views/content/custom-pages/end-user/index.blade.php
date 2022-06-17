@@ -44,9 +44,9 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-11 d-flex align-items-center justify-content-between">
-                <h1 class="logo"><a href="index.html">ScarFace</a></h1>
+{{--                <h1 class="logo"><a href="{{route('user-home')}}">ScarFace111</a></h1>--}}
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+               <a href="{{route('user-home')}}" class="logo"><img src="{{URL::asset('images/logo/logo_scarface_orange.png')}}" alt="" class="img-fluid"> ScarFace</a>
 
                 <nav id="navbar" class="navbar">
                     <ul>
@@ -75,7 +75,7 @@
 {{--                                <li><a href="#">Drop Down 4</a></li>--}}
 {{--                            </ul>--}}
 {{--                        </li>--}}
-                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+{{--                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>--}}
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
@@ -203,9 +203,7 @@
 
             <header class="section-header">
                 <h3>{{trans('currencies/currencies.purchase')}}</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                <p>{{trans('home/home.purchase_desc')}}</p>
             </header>
 
             <div class="row about-cols">
@@ -869,41 +867,41 @@
 {{--    </section><!-- End Team Section -->--}}
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="section-bg">
-        <div class="container" data-aos="fade-up">
+{{--    <section id="contact" class="section-bg">--}}
+{{--        <div class="container" data-aos="fade-up">--}}
 
-            <div class="section-header">
-                <h3>{{trans('home/home.contact_us')}}</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </div>
+{{--            <div class="section-header">--}}
+{{--                <h3>{{trans('home/home.contact_us')}}</h3>--}}
+{{--                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>--}}
+{{--            </div>--}}
 
-            <div class="row contact-info">
+{{--            <div class="row contact-info">--}}
 
-                <div class="col-md-4">
-                    <div class="contact-address">
-                        <i class="bi bi-geo-alt"></i>
-                        <h3>Address</h3>
-                        <address>A108 Adam Street, NY 535022, USA</address>
-                    </div>
-                </div>
+{{--                <div class="col-md-4">--}}
+{{--                    <div class="contact-address">--}}
+{{--                        <i class="bi bi-geo-alt"></i>--}}
+{{--                        <h3>Address</h3>--}}
+{{--                        <address>A108 Adam Street, NY 535022, USA</address>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="col-md-4">
-                    <div class="contact-phone">
-                        <i class="bi bi-phone"></i>
-                        <h3>Phone Number</h3>
-                        <p><a href="tel:{{$settings_social->whats_phone}}">{{$settings_social->whats_phone}}</a></p>
-                    </div>
-                </div>
+{{--                <div class="col-md-4">--}}
+{{--                    <div class="contact-phone">--}}
+{{--                        <i class="bi bi-phone"></i>--}}
+{{--                        <h3>Phone Number</h3>--}}
+{{--                        <p><a href="tel:{{$settings_social->whats_phone}}">{{$settings_social->whats_phone}}</a></p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="col-md-4">
-                    <div class="contact-email">
-                        <i class="bi bi-envelope"></i>
-                        <h3>Email</h3>
-                        <p><a href="mailto:{{$settings_contacts->email}}">{{$settings_contacts->email}}</a></p>
-                    </div>
-                </div>
+{{--                <div class="col-md-4">--}}
+{{--                    <div class="contact-email">--}}
+{{--                        <i class="bi bi-envelope"></i>--}}
+{{--                        <h3>Email</h3>--}}
+{{--                        <p><a href="mailto:{{$settings_contacts->email}}">{{$settings_contacts->email}}</a></p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-            </div>
+{{--            </div>--}}
 
 {{--            <div class="form">--}}
 {{--                <form action="forms/contact.php" method="post" role="form" class="php-email-form">--}}
@@ -936,8 +934,8 @@
 {{--                </form>--}}
 {{--            </div>--}}
 
-        </div>
-    </section><!-- End Contact Section -->
+{{--        </div>--}}
+{{--    </section><!-- End Contact Section -->--}}
 
 </main><!-- End #main -->
 
@@ -949,49 +947,56 @@
 
                 <div class="col-lg-3 col-md-6 footer-info">
                     <h3>ScarFace</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                        proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    <p>{{trans('home/home.footer_desc_part_1')}}</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">{{trans('home/home.home')}}</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#about">{{trans('home/home.purchase')}}</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">{{trans('home/home.features')}}</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#clients">{{trans('home/home.partners')}}</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">{{trans('home/home.contact')}}</a></li>
+{{--                        <li><i class="bi bi-chevron-right"></i> <a href="#">{{trans('home/home.home')}}</a></li>--}}
+{{--                        <li><i class="bi bi-chevron-right"></i> <a href="#about">{{trans('home/home.purchase')}}</a></li>--}}
+{{--                        <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">{{trans('home/home.features')}}</a></li>--}}
+{{--                        <li><i class="bi bi-chevron-right"></i> <a href="#clients">{{trans('home/home.partners')}}</a></li>--}}
+{{--                        <li><i class="bi bi-chevron-right"></i> <a href="#">{{trans('home/home.contact')}}</a></li>--}}
+                        <li><i class="bi bi-chevron-right"></i>
+                            <a href="{{$settings_paper->white_paper_en}}"
+                               target="_blank">{{trans('settings/settings.paper_en')}}</a>
+                        </li>
+                        <li><i class="bi bi-chevron-right"></i>
+                            <a href="{{$settings_paper->white_paper_ar}}"
+                               target="_blank">{{trans('settings/settings.paper_ar')}}</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>Contact Us</h4>
+                    <h4>{{trans('home/home.contact_us')}}</h4>
                     <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
+{{--                        A108 Adam Street <br>--}}
+{{--                        New York, NY 535022<br>--}}
+{{--                        United States <br>--}}
+{{--                        <strong>Phone:</strong> +1 5589 55488 55<br>--}}
+                        <strong>Email:</strong><a href="mailto:{{$settings_contacts->email}}">
+                        {{$settings_contacts->email}}</a><br>
                     </p>
 
                     <div class="social-links">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="{{$settings_social->twitter}}" title="twitter" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="{{$settings_social->facebook}}" title="facebook" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="{{$settings_social->telegram}}" title="telegram" target="_blank" class="telegram"><i class="bi bi-telegram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone={{$settings_social->whats_phone}}" class="whatsapp" title="whatsapp" target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
                     </div>
 
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum
-                        dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
+                    <h4>{{trans('home/home.footer_title_part_2')}}</h4>
+                    <p>{{trans('home/home.footer_desc_part_2')}}</p>
+{{--                    <form action="" method="post">--}}
+{{--                        <input type="email" name="email"><input type="submit" value="Subscribe">--}}
+{{--                    </form>--}}
                 </div>
 
             </div>

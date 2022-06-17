@@ -97,13 +97,15 @@
                                             <div class="col-md-6 col-12">
                                                 <div class="mb-2 ">
                                                     <label class="form-label"
-                                                           for="blog-edit-title">{{trans('settings/settings.whats_phone')}}</label>
+                                                           for="blog-edit-title">{{trans('settings/settings.whats_phone')}}
+                                                        <span class="text-danger">{{trans('settings/settings.whats_phone_note')}}</span>
+                                                    </label>
                                                     <input
                                                         type="text"
                                                         name="whats_phone"
                                                         id="blog-edit-title"
                                                         class="form-control"
-                                                        placeholder="+96658424411"
+                                                        placeholder="96658424411"
                                                         value="{{$social['whats_phone']}}"
                                                     />
                                                     <div class="valid-feedback">{{trans('general.looks_good')}}</div>
@@ -124,7 +126,7 @@
                                                         name="facebook"
                                                         id="blog-edit-title"
                                                         class="form-control"
-                                                        placeholder="http://www.facebook.com"
+                                                        placeholder="https://www.facebook.com"
                                                         value="{{$social['facebook']}}"
 
                                                     />
@@ -146,7 +148,7 @@
                                                         name="twitter"
                                                         id="blog-edit-title"
                                                         class="form-control"
-                                                        placeholder="http://www.twitter.com"
+                                                        placeholder="https://www.twitter.com"
                                                         value="{{$social['twitter']}}"
 
                                                     />
@@ -168,7 +170,7 @@
                                                         name="telegram"
                                                         id="blog-edit-title"
                                                         class="form-control"
-                                                        placeholder="http://www.partner.com"
+                                                        placeholder="https://telegram.me/name"
                                                         value="{{$social['telegram']}}"
 
                                                     />
