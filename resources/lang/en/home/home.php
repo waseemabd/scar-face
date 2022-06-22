@@ -8,7 +8,7 @@ return [
     "home" => "Home",
     "features" => "Features",
     "partners" => "Partners",
-    "scarFace" => "ScarFace",
+    "scarFace" => "Scarface",
     "contact" => "Contact",
     "our_features" => "Our Features",
     "our_partners" => "Our Partners",

@@ -80,7 +80,7 @@ return [
     'reject_warning'=>'Do you want to reject this Driver?',
     'read_more'=>'Read More',
 
-    'scarFace'=>'ScarFace',
+    'scarFace'=>'Scarface',
 
-    'login_welcome' => 'Welcome to ScarFace! 👋',
+    'login_welcome' => 'Welcome to Scarface! 👋',
 ];

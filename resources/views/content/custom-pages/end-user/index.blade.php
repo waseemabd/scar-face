@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>ScarFace</title>
+    <title>Scarface</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -44,9 +44,9 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-11 d-flex align-items-center justify-content-between">
-{{--                <h1 class="logo"><a href="{{route('user-home')}}">ScarFace111</a></h1>--}}
+{{--                <h1 class="logo"><a href="{{route('user-home')}}">Scarface111</a></h1>--}}
                 <!-- Uncomment below if you prefer to use an image logo -->
-               <a href="{{route('user-home')}}" class="logo"><img src="{{URL::asset('images/logo/logo_scarface_orange.png')}}" alt="" class="img-fluid"> ScarFace</a>
+               <a href="{{route('user-home')}}" class="logo"><img src="{{URL::asset('images/logo/logo_scarface_orange.png')}}" alt="" class="img-fluid"> Scarface</a>
 
                 <nav id="navbar" class="navbar">
                     <ul>
@@ -946,7 +946,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-info">
-                    <h3>ScarFace</h3>
+                    <h3>Scarface</h3>
                     <p>{{trans('home/home.footer_desc_part_1')}}</p>
                 </div>
 
@@ -1005,7 +1005,7 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong>ScarFace</strong>. All Rights Reserved
+            &copy; Copyright <strong>Scarface</strong>. All Rights Reserved
         </div>
         <div class="credits">
             <!--

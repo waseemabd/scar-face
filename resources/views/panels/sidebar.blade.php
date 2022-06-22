@@ -9,7 +9,7 @@ $configData = Helper::applClasses();
           <span class="brand-logo">
               <img src="{{URL::asset('images/logo/logo_scarface.png')}}" alt="ScarFace"/>
           </span>
-                <h2 class="brand-text">ScarFace</h2>
+                <h2 class="brand-text">Scarface</h2>
             </a>
         </li>
       <li class="nav-item nav-toggle">
